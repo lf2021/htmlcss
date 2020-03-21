@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3属性选择器小案例</title>
+    <style>
+        a[href$=html]:after{
+            content: "网页文件";
+            color: green;
+        }
+        a[href$=jpg]:after{
+            content: "图片文件";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<a href="anli.html">网站首页</a>
+<a href="anli.html">网站首页</a>
+<a href="anli.html">网站首页</a>
+<a href="城市.jpg">网站图片</a>
+<a href="城市.jpg">网站图片</a>
+<a href="城市.jpg">网站图片</a>
+<a href="城市.jpg">网站图片</a>
+<a href="anli.html">网站首页</a>
+<a href="anli.html">网站首页</a>
+<a href="城市.jpg">网站图片</a>
+<a href="城市.jpg">网站图片</a>
+</body>
+</html>

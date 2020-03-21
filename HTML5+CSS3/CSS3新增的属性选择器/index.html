@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3新增的属性选择器</title>
+    <style>
+        [id*=section1]{
+            background: green;
+        }
+        [id*=section2]{
+            background: #ff6600;
+        }
+        [id*=section1-1]{
+            background: goldenrod;
+        }
+        [id*=section]{
+            background: #000;
+        }
+        [id^=s]{
+            background: cornflowerblue;
+        }
+        [id*=b]{
+            background: hotpink;
+        }
+        [id$=d]{
+            background: rosybrown;
+        }
+        /*===========================*/
+        /*结尾字符为数字，一定要加反斜杠‘\’和数字前面的符号，如下*/
+        [id$=\-1]{
+            background: darkblue;
+        }
+        /*===========================*/
+    </style>
+</head>
+<body>
+<div id="section1">section1</div>
+<div id="section1-1">section1-1</div>
+<div id="section1-1-1c">section1-1-1</div>
+<div id="section1-1-2d">section1-1-2</div>
+<div id="section1-2e">section1-2</div>
+<div id="bection1-3">section1-3</div>
+<div id="section2-1">section2-1</div>
+<div id="section2-2">section2-2</div>
+</body>
+</html>

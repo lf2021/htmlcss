@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器以及伪元素</title>
+    <style>
+        p.left{
+            text-align: left;
+            color: #ff6600;
+        }
+        p.right{
+            text-align: right;
+            color: green;
+        }
+        a:link{
+            color: blue;
+        }
+        a:hover{
+            color: lawngreen;
+        }
+        a:visited{
+            color: saddlebrown;
+        }
+        a:active{
+            color: fuchsia;
+        }
+        p:first-line{
+            color: red;
+        }
+        p:first-letter{
+            color: darkblue;
+            font-size: 19px;
+        }
+        p:before{
+            content: "你好";
+            color: darkgreen;
+        }
+        p:after{
+            content: "__after";
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+<h1>伪类选择器以及伪元素</h1>
+<p class="left">伪类选择器以及伪元素</p>
+<p class="right">伪类选择器以及伪元素</p>
+<a href="index.html">伪类选择器以及伪元素</a>
+<p>
+    first-line伪元素选择器<br/>
+    first-line伪元素选择器用于向某个元素中的第一行文字使用样式。
+</p>
+</body>
+</html>

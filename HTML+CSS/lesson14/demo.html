@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Div+CSS布局（div+span及盒模型）</title>
+        <style type="text/css">
+            body{
+                margin:0;
+                padding:0;
+            }
+            /*
+            div{
+                background-color:green;
+                color:white;
+            }
+            span{
+                background-color:green;
+                color:white;
+            }
+
+            div{
+                width:500px;
+                height:500px;
+                padding: 0px;
+                margin:0px;
+                border:solid red 10px
+            }
+            */
+            .div{
+                margin:0 auto;
+                width:600px;
+                height:600px;
+                background-color:green;
+            }
+            .diva{
+                float:left;
+                width:240px;
+                height:240px;
+                background-color: red;
+                padding:10px;
+                border: solid 10px;
+                margin:10px;
+            }
+            .divb{
+                float:left;
+                width:240px;
+                height:240px;
+                background-color: yellow;
+                padding:10px;
+                border:solid 10px;
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <div>南京邮电大学DIV</div>
+        <div>南京邮电大学DIV</div>
+        <span>南京邮电大学SPAN</span>
+        <span>南京邮电大学SPAN</span>
+         -->
+        <div class="div">
+            <div class="diva"></div>
+            <div class="divb"></div>
+        </div>
+    </body>
+</html>
