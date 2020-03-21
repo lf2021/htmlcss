@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-            /*如果爷爷有定位，父亲没有定位，则按照爷爷的定位来
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /*如果爷爷有定位，父亲没有定位，则按照爷爷的定位来
               如果爷爷没有定位，父亲有定位，则按照父亲的定位来
               如果爷爷有定位，父亲也有定位，则按照父亲的定位来*/
-            .yeye {
-                width: 800px;
-                height: 800px;
-                background-color: skyblue;
-                position: absolute;
-            }
-            .father {
-                width: 500px;
-                height: 500px;
-                background-color: pink;
-                margin: 100px;
-                position: absolute;
-            }
-            .son {
-                width: 200px;
-                height: 200px;
-                background-color: purple;
-                position: absolute;
-                left: 50px;
-                top: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="yeye">
-            <div class="father">
-                <div class="son"></div>
-            </div>
-        </div>
-    </body>
+    .yeye {
+      width: 800px;
+      height: 800px;
+      background-color: skyblue;
+      position: absolute;
+    }
+
+    .father {
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      margin: 100px;
+      position: absolute;
+    }
+
+    .son {
+      width: 200px;
+      height: 200px;
+      background-color: purple;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="yeye">
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </div>
+</body>
+
 </html>

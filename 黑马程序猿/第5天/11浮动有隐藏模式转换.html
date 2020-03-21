@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-            div {
-                height: 200px;
-                background-color: pink;
-                float: left;    /*可以让元素默认转换为行内块元素*/
-            }
-            span {
-                width: 200px;
-                height: 200px;
-                background-color: purple;
-                float: left;
-                /*妙用 如果已经给 行内元素添加了浮动 此时不需要转换了 这个元素也有宽高*/
-            }
-        </style>
-    </head>
-    <body>
-        <div>哒哒哒的</div>
-        <span>12424123</span>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      height: 200px;
+      background-color: pink;
+      float: left;
+      /*可以让元素默认转换为行内块元素*/
+    }
+
+    span {
+      width: 200px;
+      height: 200px;
+      background-color: purple;
+      float: left;
+      /*妙用 如果已经给 行内元素添加了浮动 此时不需要转换了 这个元素也有宽高*/
+    }
+  </style>
+</head>
+
+<body>
+  <div>哒哒哒的</div>
+  <span>12424123</span>
+</body>
+
 </html>

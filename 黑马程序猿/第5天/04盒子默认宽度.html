@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-            .father {
-                height: 300px;
-                width: 600px;
-                background-color: pink;
-                /*padding-left: 30px;*/     /*因为父盒子 宽度 给定值了 则padding会撑开*/
-            }
-            .son {
-                padding-left: 30px;     /*儿盒子 没有给定宽度 用的是默认的  所有padding不会撑开盒子*/
-            }
-        </style>
-    </head>
-    <body>
-        <div class="father">
-            <div class="son">123</div>
-        </div>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .father {
+      height: 300px;
+      width: 600px;
+      background-color: pink;
+      /*padding-left: 30px;*/
+      /*因为父盒子 宽度 给定值了 则padding会撑开*/
+    }
+
+    .son {
+      padding-left: 30px;
+      /*儿盒子 没有给定宽度 用的是默认的  所有padding不会撑开盒子*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son">123</div>
+  </div>
+</body>
+
 </html>

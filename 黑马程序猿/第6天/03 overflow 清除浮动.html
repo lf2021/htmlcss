@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-            }
-            .father {
-                border: 1px solid red;
-                width: 500px;
-                overflow: hidden; /*别加错位置了, 给父亲加*/
-                /*不是所有浮动都需要清除 谁影响布局就清除谁*/
-            }
-            .big {
-                width: 100px;
-                height: 100px;
-                background-color: purple;
-                float: left;
-            }
-            .small {
-                width: 80px;
-                height: 80px;
-                background-color: blue;
-                float: left;
-            }
-            .footer {
-                width: 400px;
-                height: 150px;
-                background-color: pink;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="father">
-            <div class="big"></div>
-            <div class="small"></div>
-        </div>
-        <div class="footer"></div>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .father {
+      border: 1px solid red;
+      width: 500px;
+      overflow: hidden;
+      /*别加错位置了, 给父亲加*/
+      /*不是所有浮动都需要清除 谁影响布局就清除谁*/
+    }
+
+    .big {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      float: left;
+    }
+
+    .small {
+      width: 80px;
+      height: 80px;
+      background-color: blue;
+      float: left;
+    }
+
+    .footer {
+      width: 400px;
+      height: 150px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="big"></div>
+    <div class="small"></div>
+  </div>
+  <div class="footer"></div>
+</body>
+
 </html>
