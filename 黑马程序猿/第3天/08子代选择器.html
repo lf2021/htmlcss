@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            ul li a {  /*后代选择器  所有的后代的意思*/
+                color: red;
+            }
+
+            ul li > a {  /*子带选择器 子 指的是 亲儿子  大于号分割  此时的a 一定是li的亲儿子*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="#">一级菜单</a>
+
+                <div>
+                    <a href="#">二级菜单</a>
+                    <a href="#">二级菜单</a>
+                    <a href="#">二级菜单</a>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

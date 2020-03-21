@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* transition: width 2s ease 0s; */
+            transition: all 2s;
+            /* 
+            1.第一个属性是表示变换的是宽度，第二个是变换时常，第三个是运动曲线，第四个是何时开始变换
+            2.多组属性用逗号隔开 
+            3.一般只写前两个，后两个默认不写     transition: all 2s;
+            4.过度写到本身上，谁做过渡动画就写到谁身上
+            */
+        }
+        div:hover {
+            width: 800px;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

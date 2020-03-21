@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 224px;
+            height: 224px;
+        }
+        div img {
+            position: absolute;
+            top: 0;
+            left: 0;  
+            transition: all 2s; 
+        }
+        div:hover img {
+            transform: rotateY(180deg);
+        }
+        div img:last-child {
+            backface-visibility: hidden;
+            /* 定义当元素不面向屏幕时是否可见 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/hou.svg" alt="">
+        <img src="images/qian.svg" alt="">
+    </div>
+</body>
+</html>

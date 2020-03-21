@@ -1,0 +1,148 @@
+/*先删除默认的内外边距*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+    height: 3000px;
+}
+li {
+    list-style: none;
+}
+
+/*顶部导航栏开始*/
+.header {
+    height: 100px;
+}
+
+.inner {
+    width: 1200px;
+    height: 100px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+    line-height: 100px;
+}
+.logo {
+    float: left;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    float: left;
+    margin: 0 20px;
+}
+.nav li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+}
+.nav li a:hover {
+    color: #2288f6;
+}
+/*顶部导航栏结束*/
+
+
+/*banner start*/
+.banner {
+    height: 620px;
+    background: url("../images/banner.jpg") no-repeat top center;
+}
+/*banner end*/
+
+
+/*我们服务模块*/
+.service {
+    width: 1060px;
+    height: 820px;
+    margin: 75px auto 120px;
+    /*background-color: pink;*/
+}
+.service-hd {
+    height: 145px;
+    border-top: 1px solid #cccccc;
+    margin: 0 25px 50px;
+}
+.service-hd h3 {
+    width: 167px;
+    height: 46px;
+    margin: -15px auto 0;
+}
+.service-hd p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 24px;
+    text-align: center;
+    width: 845px;
+    margin: 15px auto 0;
+}
+.service-bd li {
+    float: left;
+    width: 318px;
+    height: 510px;
+    border: 1px solid #cccccc;
+}
+.service-bd .two {
+    margin: 0 50px;
+}
+.service-bd h3 {
+    font-size: 18px;
+    text-align: center;
+    font-family: "黑体";
+    font-weight: 400;
+}
+.service-bd p {
+    width: 238px;
+    height: 110px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666666;
+    margin: 12px 40px 42px;
+}
+.service-bd a {
+    height: 38px;
+    width: 150px;
+    display: block;
+    font-size: 12px;
+    line-height: 38px;
+    color: #ff9412;
+    border: 1px solid #ff9412;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 85px;
+}
+.service-bd a:hover {
+    background-color: #ff9412;
+    color: #ffffff;
+}
+/*我们服务模块结束*/
+
+/*经典案例模块开始*/
+.case {
+    width: 1060px;
+    border-top: 1px solid #cccccc;
+    margin: 0 auto;
+}
+.case {
+    width: 1060px;
+    height: 430px;
+    margin: 75px auto 0;
+    /*background-color: pink;*/
+}
+.case h3 {
+    width: 167px;
+    height: 50px;
+    margin: -15px auto 50px;
+}
+.case li {
+    float: left;
+    width: 325px;
+    height: 211px;
+}
+.case .second {
+    margin: 0 40px;
+}
+/*经典案例模块结束*/

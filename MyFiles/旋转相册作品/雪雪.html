@@ -1,0 +1,465 @@
+<!--第1种旋转相册-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>雪雪</title>
+        <link href='https://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
+
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Bad+Script|Gruppo|Kumar+One+Outline|League+Script|Londrina+Outline|Monoton|Sriracha|Yellowtail&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?+'>
+
+        <link rel="stylesheet" href="style_1.css">
+
+        <link type="text/css" href="style_4.css" rel="stylesheet ">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .top {
+                width: 1200px;
+                height: 100px;
+            }
+
+            .middle{
+                width:1200px ;
+                height: 400px;
+                margin: 0;
+                float:left;
+                position: relative;
+                -webkit-perspective: 1500px;
+            }
+
+            .bottom_left {
+                width: 480px;
+                height: 480px;
+                margin: 0;
+                float:left;
+                position: relative;
+                -webkit-perspective: 1500px;  /*  景深，有了它子元素才能产生3D效果 ,加上内核可以实现不同浏览器不同样式*/
+            }
+            .bottom_right {
+                width: 480px;
+                height: 480px;
+                margin: 0;
+                float:right;
+                position: relative;
+                -webkit-perspective: 1500px;  /*  景深，有了它子元素才能产生3D效果 ,加上内核可以实现不同浏览器不同样式*/
+            }
+
+            ul {
+                width: 600px;
+                height: 500px;
+                transform-style: preserve-3d;
+                /* 规定指定元素的子元素的变换效果是位于3D空间，还是被平展于元素的2D空间 */
+                transform: rotateX(-30deg) rotateY(30deg);
+                /* 整体给一点角度比较容易看出立体感 */
+                animation: 16s spin linear infinite;
+            }
+
+            li {
+                width: 400px;
+                height: 400px;
+                list-style-type: none;
+                /* 绝对定位,先让li标签重叠 */
+                position: absolute;
+            }
+
+            ul li img {
+
+                /* 图片和父盒子一样大 */
+
+                width: 100%;
+
+                height: 100%
+            }
+            /* 调整图片位置组成正方体，此时正方体正对着我们，给ul整体旋转一定角度，更容易看出立体感 */
+            ul :nth-child(1){
+                transform:rotateY(0deg) translateZ(200px);
+            }
+            ul :nth-child(2){
+                transform: rotateY(-90deg) translateZ(200px);
+            }
+            ul :nth-child(3) {
+                transform: rotateY(-180deg) translateZ(200px);
+            }
+            ul :nth-child(4){
+                transform: rotateY(-270deg) translateZ(200px);
+            }
+            ul :nth-child(5){
+                transform: rotatex(90deg) translateZ(200px);
+            }
+            ul :nth-child(6){
+                transform: rotatex(90deg) translateZ(-200px);
+            }
+
+            @keyframes spin
+            {
+                from
+                {
+                    transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+                }
+
+                to
+                {
+                    transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <table style="margin:auto;width:100%;height:100%">
+            <tr>
+                <td>
+                    <div class="top">
+                        <x-sign>
+                            <br><small>有人问我粥可温&nbsp;&nbsp;&nbsp;&nbsp;有人与我共黄昏</small>
+                        </x-sign>
+                    </div>
+                    <div class="middle">
+                        <div id="react">
+                            <div class="out_front">
+                                <img src="images/13.jpg" class="out_pic">
+                            </div>
+                            <div class="out_back">
+                                <img src="images/14.jpg" class="out_pic">
+                            </div>
+                            <div class="out_left">
+                                <img src="images/15.jpg" class="out_pic">
+                            </div>
+                            <div class="out_right">
+                                <img src="images/16.jpg" class="out_pic">
+                            </div>
+                            <div class="out_top">
+                                <img src="images/17.jpg" class="out_pic">
+                            </div>
+                            <div class="out_bottom">
+                                <img src="images/18.jpg" class="out_pic">
+                            </div>
+                            <span class="in_front">
+                            <img src="images/19.jpg" class="in_pic">
+                        </span>
+                            <span class="in_back">
+                            <img src="images/20.jpg" class="in_pic">
+                        </span>
+                            <span class="in_left">
+                            <img src="images/21.jpg" class="in_pic">
+                        </span>
+                            <span class="in_right">
+                            <img src="images/22.jpg" class="in_pic">
+                        </span>
+                            <span class="in_top">
+                            <img src="images/23.jpg" class="in_pic">
+                        </span>
+                            <span class="in_bottom">
+                            <img src="images/24.jpg" class="in_pic">
+                        </span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_left">
+                            <ul>
+                                <li>
+                                    <img src="images/1.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/2.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/3.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/4.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/5.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/6.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom_right">
+                            <ul>
+                                <li>
+                                    <img src="images/7.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/8.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/9.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/10.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/11.jpg">
+                                </li>
+                                <li>
+                                    <img src="images/12.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+
+
+        <script  src="index.js"></script>
+
+        <div style="text-align:center;clear:both">
+           <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+           <script src="/follow.js" type="text/javascript"></script>
+    </body>
+<html>
+
+
+
+
+<!--第2种旋转相册-->
+
+<!--<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>旋转相册</title>
+        <meta name="keywords" content=""> &lt;!&ndash; 关键字 &ndash;&gt;
+        <meta name="description" content=""> &lt;!&ndash; 描述 &ndash;&gt;
+        <style>
+            * {
+                margin: 0;
+            }
+            body {
+                background: #000;
+            }
+            #perspective {
+                perspective: 800px;  /*场景深度*/
+            }
+            #wrap {
+                position: relative;
+                width: 120px;
+                height: 180px;
+                margin: 100px auto;
+                /*border: 1px solid #F00;*/
+                transform-style: preserve-3d;
+                transform: rotateX(-20deg) ;
+            }
+            img {
+                width: 100%;
+                position: absolute;
+                box-shadow:0 0 30px red;
+                -webkit-box-reflect: below 5px -webkit-linear-gradient(top,rgba(0,0,0,0) 30%,rgba(0,0,0,.5) 100%);
+                /*-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));*/
+            }
+        </style>
+    </head>
+    <body οndragstart="return false;" οncοntextmenu="return false;">
+        <div id="perspective">
+            <div id="wrap">
+                <img src="MyFiles/images/fig1.jpg" alt="">
+                <img src="MyFiles/images/fig2.jpg" alt="">
+                <img src="MyFiles/images/fig3.jpg" alt="">
+                <img src="MyFiles/images/fig4.jpg" alt="">
+                <img src="MyFiles/images/fig5.jpg" alt="">
+                <img src="MyFiles/images/fig6.jpg" alt="">
+                <img src="MyFiles/images/fig7.jpg" alt="">
+                <img src="MyFiles/images/fig8.jpg" alt="">
+                <img src="MyFiles/images/fig9.jpg" alt="">
+                <img src="MyFiles/images/fig10.jpg" alt="">
+                <img src="MyFiles/images/fig11.jpg" alt="">
+                <img src="MyFiles/images/fig12.jpg" alt="">
+            </div>
+        </div>
+    </body>
+    <script>
+        var oImg = document.getElementsByTagName('img');
+        var deg = 360/oImg.length; //圆的单位度数
+        window.onload = function() {
+            [].map.call(oImg,function(arg1, arg2) {
+                // console.log(arg1,arg2);
+                arg1.style.boxReflect = 'below 5px -webkit-linear-gradient(top,rgba(0,0,0,0) 30%,rgba(0,0,0,.5) 100%)';
+                arg1.style.transform = 'rotateY(' + arg2*deg + 'deg) translateZ(300px)';
+                arg1.style.transition = '1s ' +(oImg.length - arg2)*0.2 + 's';
+            })
+        }
+
+
+        //拖拽
+        var newX,newY,pervX,pervY,minusX,minusY,rotX = -20,rotY = 0;
+        var oWrap = document.getElementById('wrap');
+        //点击事件
+        document.onmousedown = function(e) {
+            pervX = e.clientX;
+            pervY = e.clientY;
+            // console.log(e)
+            //移动事件
+            this.onmousemove = function(e) {
+                // console.log(22)
+                newX = e.clientX;
+                newY = e.clientY;
+
+
+                //差值
+                minusX = newX - pervX;
+                minusY = newY - pervY;
+
+                //转换为度数给相册
+                rotX -= minusY * 0.1;
+                rotY += minusX * 0.2;
+                oWrap.style.transform = 'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)';
+
+                pervX = newX;
+                pervY = newY;
+            }
+            //松开事件
+            this.onmouseup = function(e) {
+                //禁止移动事件
+                this.onmousemove = null;
+                // console.log(111)
+            }
+        }
+    </script>
+</html>-->
+
+
+
+<!--第3种旋转相册-->
+
+<!--<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>3D旋转</title>
+        <style type="text/css">
+            *{padding: 0;
+                margin: 0;}
+            body,html{height:100%;}
+            body{background-image: url("images/beijing.jpg");background-size: 100% 100%;}
+            #box{width: 280px;
+                height: 400px;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top:0;
+                bottom: 0;
+                margin: auto;
+                transform-style: preserve-3d;
+                transform: rotateX(0deg) rotateY(0deg);
+                animation: go 45s linear infinite;
+            }
+            #box img{width: 280px;
+                height: 400px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #box img:nth-child(1){
+                transform: rotateY(0deg) translateZ(650px);}
+            #box img:nth-child(2){
+                transform: rotateY(36deg) translateZ(650px);}
+            #box img:nth-child(3){
+                transform: rotateY(72deg) translateZ(650px);}
+            #box img:nth-child(4){
+                transform: rotateY(108deg) translateZ(650px);}
+            #box img:nth-child(5){
+                transform: rotateY(144deg) translateZ(650px);}
+            #box img:nth-child(6){
+                transform: rotateY(180deg) translateZ(650px);}
+            #box img:nth-child(7){
+                transform: rotateY(216deg) translateZ(650px);}
+            #box img:nth-child(8){
+                transform: rotateY(252deg) translateZ(650px);}
+            #box img:nth-child(9){
+                transform: rotateY(288deg) translateZ(650px);}
+            #box img:nth-child(10){
+                transform: rotateY(324deg) translateZ(650px);}
+            @keyframes go {
+                0%{transform: rotateX(0deg) rotateY(0deg);}
+                25%{transform: rotateX(20deg) rotateY(180deg);}
+                50%{transform: rotateX(0deg) rotateY(360deg);}
+                75%{transform: rotateX(-20deg) rotateY(540deg);}
+                100%{transform: rotateX(0deg) rotateY(720deg);}
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <img src="images/fig1.jpg">
+            <img src="images/fig2.jpg">
+            <img src="images/fig3.jpg">
+            <img src="images/fig4.jpg">
+            <img src="images/fig5.jpg">
+            <img src="images/fig6.jpg">
+            <img src="images/fig7.jpg">
+            <img src="images/fig8.jpg">
+            <img src="images/fig9.jpg">
+            <img src="images/fig10.jpg">
+            <img src="images/fig11.jpg">
+            <img src="images/fig12.jpg">
+        </div>
+    </body>
+</html>-->
+
+
+<!--第4种旋转相册-->
+<!--
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link type="text/css"  href="style_4.css" rel="stylesheet ">
+        <title>旋转立方体相册</title>
+    </head>
+    <body>
+        <div id="react">
+            <div class="out_front">
+                <img src="images/fig1.jpg" class="out_pic">
+            </div>
+            <div class="out_back">
+                <img src="images/fig2.jpg" class="out_pic">
+            </div>
+            <div class="out_left">
+                <img src="images/fig3.jpg" class="out_pic">
+            </div>
+            <div class="out_right">
+                <img src="images/fig4.jpg" class="out_pic">
+            </div>
+            <div class="out_top">
+                <img src="images/fig5.jpg" class="out_pic">
+            </div>
+            <div class="out_bottom">
+                <img src="images/fig6.jpg" class="out_pic">
+            </div>
+            <span class="in_front">
+        <img src="images/fig7.jpg" class="in_pic">
+    </span>
+            <span class="in_back">
+        <img src="images/fig8.jpg" class="in_pic">
+    </span>
+            <span class="in_left">
+        <img src="images/fig9.jpg" class="in_pic">
+    </span>
+            <span class="in_right">
+        <img src="images/fig10.jpg" class="in_pic">
+    </span>
+            <span class="in_top">
+        <img src="images/fig11.jpg" class="in_pic">
+    </span>
+            <span class="in_bottom">
+        <img src="images/fig12.jpg" class="in_pic">
+    </span>
+        </div>
+    </body>
+</html>
+-->
+
+
+

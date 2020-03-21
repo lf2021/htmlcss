@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            a {
+                display: block;
+                width: 448px;
+                height: 252px;
+                margin: 100px;
+                position: relative;
+            }
+            .mask {
+                width: 100%;
+                height: 252px;
+                background: rgba(0, 0, 0, .4) url("images/arr.png") no-repeat center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: none;
+            }
+            a:hover .mask{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">
+            <img src="images/tudou.jpg" alt="">
+            <div class="mask"></div>
+        </a>
+    </body>
+</html>

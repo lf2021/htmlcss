@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+i {
+    font-family: "icomoon";
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+li {
+    list-style: none;
+}
+.style-red {
+    color: #f10215!important;
+}
+input, button {
+    outline: none;
+}
+body {
+    background-color: #f4f4f4;
+}
+@font-face {  /*声明字体  引用字体*/
+    font-family: "icomoon";  /*我们自己起名字可以*/
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;  /*倾斜字体正常*/
+}
+
+/*右侧固定导航栏开始*/
+.fixnav {
+    width: 60px;
+    height: 409px;
+    background: #fff;
+    position: fixed;
+    right: 276px;
+    top:  135px;
+}
+.fixnav li {
+    width: 60px;
+    height: 60px;
+}
+.fixnav li a {
+    display: block;
+    width: 28px;
+    height: 38px;
+    padding: 11px 16px;
+    text-align: center;
+}
+.fixnav li a:hover {
+    color: #f10215;
+}
+.fixnav li a span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    width: 28px;
+    height: 38px;
+}
+/*右侧固定导航栏结束*/
+
+/*header部分开始*/
+    /*ad*/
+.header-ad {
+    height: 80px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+.header-ad-i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(0, 0, 0, .3);
+    color: #f4f4f4 ;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+    /*nav*/
+.header-nav {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+.jiangsu a {
+    display: block;
+    width: 56px;
+    height: 30px;
+    color: #f10215;
+    margin-left: 10px;
+}
+
+.jiangsu a span {
+    color: #999;
+}
+.jiangsu a:hover {
+    background-color: #fff;
+    color: #f10215;
+}
+
+.login {
+    margin-right: 13px;
+}
+.login li {
+    float: left;
+}
+.login li div a {
+    padding: 0 3px;
+}
+.login .free-login {
+    margin-left: 5px;
+}
+.login a {
+    display: inline-block;
+}
+.login a:hover {
+    color: #f10215;
+}
+.login .spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    margin: 11px 13px 0;
+}
+.login li.kuang:hover {
+    background-color: #fff;
+}
+
+    /*search*/
+.header-search {
+    height: 140px;
+    border-bottom: 1px solid #ddd;
+}
+.header-search-pic1 a {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background: url("../images/jd-sprite.png") no-repeat;
+    float: left;
+    overflow: hidden;
+}
+.header-search-pic2 {
+    float: right;
+    width: 190px;
+    height: 120px;
+}
+.header-search-main {
+    float: left;
+    width: 810px;
+    height: 115px;
+    position: relative;
+    padding-top: 25px;
+}
+.header-search-main-top input {
+    width: 473px;
+    height: 32px;
+    border: 2px solid #f10215;
+    margin-left: 70px;
+    color: #989898;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.header-search-main-top button {
+    width: 58px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #f10215;
+    border: 0;
+    position: absolute;
+    top: 25px;
+    left: 562px;
+    cursor: pointer;
+}
+.header-search-main-top button i {
+    font-size: 16px;
+    color: #ffffff;
+}
+.header-search-word {
+    margin-left: 70px;
+}
+.header-search-word li {
+    float: left;
+    margin-right: 10px;
+}
+.header-search-word li a {
+    font-size: 12px;
+    color: #747474;
+}
+.header-search-main-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.header-search-main-bottom li {
+    float: left;
+}
+.header-search-main-bottom li a {
+    font-size: 14px;
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 24px;
+}
+.header-search-main-bottom li a:hover {
+    color: #f10215;
+}
+/*header部分结束*/
+
+
+
+
+/*footer 部分开始*/
+.footer {
+    margin-top: 50px;
+    height: 500px;
+    background-color: #f4f4f4;
+}
+.footer-all {
+    height: 110px;
+    border-bottom: 1px solid #ddd;
+}
+.footer-ad {
+    height: 110px;
+}
+.footer-ad li {
+    float: left;
+}
+.footer-ad li div {
+    width: 260px;
+    height: 75px;
+    padding: 35px 0 0 35px;
+    line-height: 110px;
+}
+.footer-ad h5 {
+    width: 36px;
+    height: 42px;
+    background: url("../images/sprite_bottom.png") 0 -193px;
+    text-indent: -999px;
+    overflow: hidden;
+    float: left;
+}
+.footer-ad p {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 10px;
+}
+
+.footer-info {
+    height: 175px;
+    padding-top: 25px;
+    border-bottom: 1px solid #dddddd;
+}
+.footer-info dl {
+    float: left;
+    margin-right: 138px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-info dl.area {
+    width: 180px;
+    height: 100px;
+    margin-right: 40px;
+    float: right;
+}
+.footer-info .area a {
+    margin-top: 5px;
+    float: right;
+    color: #666;
+    cursor: pointer;
+}
+.footer-info .area a:hover {
+    color: #f10215;
+
+}
+.footer-info p {
+    color: #666;
+    line-height: 18px;
+}
+.footer-info dt.area {
+    text-align: center;
+}
+.footer-info dt {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+.footer-info dd a {
+    line-height: 22px;
+    color: #666666;
+}
+.footer-info dd a:hover {
+    color: #f10215;
+}
+
+.footer-nav {
+    height: 245px;
+    padding-top: 20px;
+}
+.subnav,
+.footer-copyright {
+    text-align: center;
+}
+.subnav a {
+    font-size: 12px;
+    color: #666;
+}
+.subnav a:hover {
+    color: #f10215;
+}
+.subnav span{
+    font-size: 12px;
+    color: #666;
+    margin: 0 5px;
+}
+.footer-copyright {
+    margin: 15px auto 40px;
+}
+.footer-copyright p {
+    height: 22px;
+    line-height: 22px;
+}
+.footer-copyright a,
+.footer-copyright span {
+    color: #999;
+    font-size: 12px;
+}
+.footer-copyright span {
+    margin: 0 5px;
+}
+.footer-copyright a:hover {
+    color: #f10215;
+}
+.footer-copyright i {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background: url("../images/sprite_bottom.png") no-repeat -128px -155px;
+    margin-right: 10px;
+}
+.footer-copyright .ico1 {
+    width: 12px;
+    height: 12px;
+    background-position: -109px -155px;
+    margin: -1px 10px 0 0;
+}
+.footer-copyright .ico2 {
+    background-position: -148px -155px;
+}
+.footer-copyright .ico3 {
+    background-position: -168px -155px;
+}
+.footer-copyright .ico4 {
+    background-position: -108px -172px;
+}
+
+.footer-copyright-auth {
+    text-align: center;
+}
+.footer-copyright-auth a {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url("../images/sprite_bottom.png") no-repeat -205px 0;
+    margin: 0 3px;
+}
+.footer-copyright-auth .footer-copyright-auth-ico2 {
+    background-position: -205px -38px;
+}
+.footer-copyright-auth .footer-copyright-auth-ico3 {
+    background-position: -205px -74px;
+}
+.footer-copyright-auth .footer-copyright-auth-ico4 {
+    background-position: -205px -148px;
+}
+/*footer 部分结束*/

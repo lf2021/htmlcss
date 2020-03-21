@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*div[class] {    !*把带有class属性的div选出来*!
+                background-color: pink;
+            }
+            div[class=demo] {
+                background-color: purple;
+            }
+            div[class^=test] {  !*把属性以test开头的div选出来*!
+                background-color: skyblue;
+            }*/
+            div[class$=test] {  /*把属性以test结尾的div选出来*/
+                background-color: red;
+            }
+            /*div[class*=test] {  !*把属性有test的div都选出来*!
+                background-color: skyblue;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class="demo">王者荣耀</div>
+        <div>王者荣耀</div>
+        <div>王者荣耀</div>
+        <div>王者荣耀</div>
+        <div>王者荣耀</div>
+        <div>王者荣耀</div>
+        <div>王者荣耀</div>
+        <div class="firsttest">王者荣耀</div>
+        <div class="test">王者荣耀</div>
+        <div class="_test_">王者荣耀</div>
+        <div class="test1">王者荣耀</div>
+        <div class="test2">王者荣耀</div>
+        <div class="test3">王者荣耀</div>
+    </body>
+</html>

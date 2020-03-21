@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .top {
+                width: 100%;
+                height: 44px;
+                background: url("images/top.png") no-repeat top center;
+                /*margin: 0 auto;*/
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .box {
+                width: 1002px;
+                height: 1760px;
+                margin: 44px auto;
+            }
+            .ad-l, .ad-r {
+                width: 120px;
+                height: 288px;
+                position: fixed;
+                top: 100px;
+            }
+            .ad-r {
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/ad-l.png" alt="" class="ad-l">
+        <img src="images/ad-r.png" alt="" class="ad-r">
+        <div class="top"></div>
+        <div class="box">
+            <img src="images/box.png" alt="">
+        </div>
+    </body>
+</html>

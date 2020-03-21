@@ -1,0 +1,250 @@
+<!--第1种旋转相册-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>靴靴酱</title>
+        <link href='https://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
+
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Bad+Script|Gruppo|Kumar+One+Outline|League+Script|Londrina+Outline|Monoton|Sriracha|Yellowtail&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?+'>
+
+        <link rel="stylesheet" href="style_1.css">
+
+        <link type="text/css" href="style_4.css" rel="stylesheet ">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .top {
+                width: 800px;
+                height: 260px;
+                padding: 5px;
+                clear:both;
+            }
+            .first {
+                float: left;
+            }
+            .second{
+                float: left;
+            }
+            #react{
+                width: 400px;
+                height:400px;
+                margin: 0;
+                transform-style:preserve-3d;
+                animation:rotate 20s infinite;
+                animation-timing-function: linear;
+            }
+            #react div{
+                position:absolute;
+                transition: all .4s;
+            }
+            div .out_pic{
+                width:200px;
+                height:200px;
+                opacity:0.9;
+            }
+            div .in_pic{
+                width:100px;
+                height:100px;
+            }
+            #react span{
+                display:block;
+                position:absolute;
+                width:100px;
+                height:100px;
+                top:50px;
+                left:50px;
+            }
+            @keyframes rotate{
+                from{transform: rotateX(0deg) rotateY(0deg);}
+                to{transform: rotateX(360deg) rotateY(360deg);}
+            }
+
+
+            .out_front{
+                transform:translateZ(100px);
+            }
+            .out_back{
+                transform:translateZ(-100px);
+            }
+            .out_left{
+                transform:rotateY(90deg) translateZ(100px);
+            }
+            .out_right{
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+            .out_top{
+                transform:rotateX(90deg) translateZ(100px);
+            }
+            .out_bottom{
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+            .in_front{
+                transform:translateZ(50px);
+            }
+            .in_back{
+                transform:translateZ(-50px);
+            }
+            .in_left{
+                transform:rotateY(90deg) translateZ(50px);
+            }
+            .in_right{
+                transform: rotateY(-90deg) translateZ(50px);
+            }
+            .in_top{
+                transform:rotateX(90deg) translateZ(50px);
+            }
+            .in_bottom{
+                transform: rotateX(-90deg) translateZ(50px);
+            }
+
+            /*外面的图片散开*/
+            #react:hover .out_front{
+                transform:translateZ(200px);
+            }
+            #react:hover .out_back{
+                transform:translateZ(-200px);
+            }
+            #react:hover .out_left{
+                transform:rotateY(90deg) translateZ(200px);
+            }
+            #react:hover .out_right{
+                transform: rotateY(-90deg) translateZ(200px);
+            }
+            #react:hover .out_top{
+                transform:rotateX(90deg) translateZ(200px);
+            }
+            #react:hover .out_bottom{
+                transform: rotateX(-90deg) translateZ(200px);
+            }
+
+
+            /*里面的图片散开*/
+            #react:hover .in_front{
+                transform:translateZ(100px);
+            }
+            #react:hover .in_back{
+                transform:translateZ(-100px);
+            }
+            #react:hover .in_left{
+                transform:rotateY(90deg) translateZ(100px);
+            }
+            #react:hover .in_right{
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+            #react:hover .in_top{
+                transform:rotateX(90deg) translateZ(100px);
+            }
+            #react:hover .in_bottom{
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="top">
+            <x-sign>
+                <br><small>斯人若虹</small>
+            </x-sign>
+            <x-sign>
+                <br><small>触及方知己</small>
+            </x-sign>
+        </div>
+        <div class="first">
+            <div id="react">
+                <div class="out_front">
+                    <img src="images/13.jpg" class="out_pic">
+                </div>
+                <div class="out_back">
+                    <img src="images/14.jpg" class="out_pic">
+                </div>
+                <div class="out_left">
+                    <img src="images/15.jpg" class="out_pic">
+                </div>
+                <div class="out_right">
+                    <img src="images/16.jpg" class="out_pic">
+                </div>
+                <div class="out_top">
+                    <img src="images/17.jpg" class="out_pic">
+                </div>
+                <div class="out_bottom">
+                    <img src="images/18.jpg" class="out_pic">
+                </div>
+                <span class="in_front">
+                <img src="images/19.jpg" class="in_pic">
+            </span>
+                <span class="in_back">
+                <img src="images/20.jpg" class="in_pic">
+            </span>
+                <span class="in_left">
+                <img src="images/21.jpg" class="in_pic">
+            </span>
+                <span class="in_right">
+                <img src="images/22.jpg" class="in_pic">
+            </span>
+                <span class="in_top">
+                <img src="images/23.jpg" class="in_pic">
+            </span>
+                <span class="in_bottom">
+                <img src="images/24.jpg" class="in_pic">
+            </span>
+            </div>
+        </div>
+        <div class="second">
+            <div id="react">
+                <div class="out_front">
+                    <img src="images/1.jpg" class="out_pic">
+                </div>
+                <div class="out_back">
+                    <img src="images/2.jpg" class="out_pic">
+                </div>
+                <div class="out_left">
+                    <img src="images/3.jpg" class="out_pic">
+                </div>
+                <div class="out_right">
+                    <img src="images/4.jpg" class="out_pic">
+                </div>
+                <div class="out_top">
+                    <img src="images/5.jpg" class="out_pic">
+                </div>
+                <div class="out_bottom">
+                    <img src="images/6.jpg" class="out_pic">
+                </div>
+                <span class="in_front">
+                <img src="images/7.jpg" class="in_pic">
+                </span>
+                <span class="in_back">
+                <img src="images/8.jpg" class="in_pic">
+                </span>
+                <span class="in_left">
+                <img src="images/9.jpg" class="in_pic">
+                </span>
+                <span class="in_right">
+                <img src="images/10.jpg" class="in_pic">
+                </span>
+                <span class="in_top">
+                <img src="images/11.jpg" class="in_pic">
+                </span>
+                <span class="in_bottom">
+                <img src="images/12.jpg" class="in_pic">
+                </span>
+            </div>
+        </div>
+    </body>
+<html>
+
+
+
+
+
+
+

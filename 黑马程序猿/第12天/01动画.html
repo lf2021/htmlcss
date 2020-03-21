@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        position: absolute;
+        left: 0;
+        /*
+        动画 
+        animation: 动画名称 动画时间 动画曲线 动画何时开始 播放次数(1/2/3/.../infinite) 是否反向(normal/alternate)
+        */
+        animation: move 1s ease 0s infinite alternate;
+    }
+    @keyframes move {
+        from {
+            left: 0;
+        }
+        to {
+            left: 1000px;
+            background-color: yellow;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

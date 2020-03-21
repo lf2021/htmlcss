@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px auto;
+        animation: heart 0.5s infinite;
+    }
+    img {
+        width: 400px;
+        height: auto;
+        /* animation: 动画名称 动画时间 动画曲线 动画何时开始 播放次数(1/2/3/.../infinite) 是否反向(normal/alternate) */
+        animation: heart 0.5s infinite;
+    }
+    @keyframes heart {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    </style>
+</head>
+<body>
+    <img src="images/1.jpg" alt="">
+    <div></div>
+</body>
+</html>

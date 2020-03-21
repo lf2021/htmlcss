@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            body {
+                height: 3000px;
+            }
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+                /*position: absolute;
+                top: 10px;
+                left: 10px;*/
+            }
+            .top {
+                position: absolute;     /*绝对定位不占位置 和浮动一样*/
+                right: 0;
+                bottom: 0;  /* 以当前屏幕为基准点 */
+
+            }
+            .bottom {
+                background-color: purple;
+                width: 210px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </body>
+</html>

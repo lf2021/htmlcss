@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .father {
+                width: 500px;
+                height: 500px;
+                background-color: pink;
+                /*padding-top: 100px;*/   /*会撑开盒子，需要减去100px*/
+                /*border-top: 10px solid pink;*/
+                /*padding-top: 10px;*/
+                overflow: hidden
+
+            }
+            .son {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-top: 100px;
+                /*son盒子不会下移，解决办法有两种：
+                1.给father加border或者padding
+                2.overflow: hidden*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </body>
+</html>

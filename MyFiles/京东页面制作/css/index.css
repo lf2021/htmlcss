@@ -1,0 +1,220 @@
+/*main部分开始*/
+.main {
+    height: 470px;
+    padding-top: 10px;
+}
+.main-col1 {
+    float: left;
+    width: 190px;
+    height: 470px;
+    padding-top: 10px;
+}
+.main-col1 li {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+}
+.main-col1 li:hover {
+    background-color: #ccc;
+}
+.main-col1 li a {
+
+    font-size: 14px;
+    color: #333;
+}
+.main-col1 li a:hover {
+    color: #f10215;
+}
+.main-col1 li span {
+    font-size: 12px;
+    color: #333;
+}
+.main-col2 {
+    float: left;
+    width: 790px;
+    height: 470px;
+    margin-left: 10px;
+    position: relative;
+}
+.main-col2 .col1 {
+    width: 590px;
+    height: 470px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.main-col2 .lunbo {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.main-col2 .lunbo li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    background-color: #999;
+    border-radius: 50%;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.main-col2 .lunbo li.current {
+    background-color: #ffffff;
+}
+
+.arr-l, .arr-r {
+    float: left;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    color: #f4f4f4;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+}
+.arr-l {
+    left: -35px;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 35px;
+}
+.arr-r {
+    right: -35px;
+    padding-left: 10px;
+    border-radius: 35px;
+}
+.main-col2 .col2 {
+    float: left;
+}
+.main-col2 .col2 img {
+    display: block;
+    width: 190px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.main-col3 {
+    float: right;
+    width: 162px;
+    height: 455px;
+    padding: 15px 13px 0 15px;
+    background-color: #fff;
+}
+.main-col3-login {
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+.main-col3-login img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+.txt {
+    padding-left: 60px;
+}
+.txt a {
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+}
+.txt span {
+    font-size: 12px;
+    color: #333;
+}
+.txt a:hover {
+    color: #c81623;
+}
+
+.main-col3-login li {
+    float: left;
+}
+.main-col3-login ul {
+    width: 150px;
+    height: 25px;
+    margin: 15px 5px;
+}
+.main-col3-login .xinren,
+.main-col3-login .huiyuan {
+    display: block;
+    width: 70px;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 12px;
+}
+.main-col3-login .xinren {
+    color: #f4f4f4;
+    background-color: #e1251b;
+    margin-right: 10px;
+}
+.main-col3-login .huiyuan {
+    background-color: #363634;
+    color: #e5d790;
+}
+.main-col3-login .xinren:hover,
+.main-col3-login .huiyuan:hover {
+    background-color: #c81623;
+    color: #f4f4f4;
+}
+
+.main-col3-ad {
+    height: 130px;
+    border-bottom: 1px solid #ddd;
+}
+.main-col3-ad h5 {
+    margin: 10px 0;
+    /*height: 28px;*/
+}
+.main-col3-ad h5 a {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+}
+.main-col3-ad h5 a:hover {
+    color: #f10215;
+}
+
+.main-col3-ad li {
+    font-size: 12px;
+    color: #666;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;    /*强制在一行显示*/
+    overflow: hidden;       /*溢出隐藏*/
+    text-overflow: ellipsis;/*溢出文字用省略号代替*/
+    margin-bottom: 11px;
+}
+.main-col3-ad li span {
+    display: inline-block;
+    text-align: center;
+    height: 16px;
+    width: 35px;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+}
+.main-col3-list {
+    padding-top: 10px;
+}
+.main-col3-list li{
+    height: 55px;
+    width: 54px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+}
+.main-col3-list a {
+    display: inline-block;
+    width: 63px;
+    height: 55px;
+}
+.main-col3-list img {
+    width: 28px;
+    height: 28px;
+}
+/*main部分结束*/

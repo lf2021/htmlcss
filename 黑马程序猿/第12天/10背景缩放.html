@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 400px;
+        height: 400px;
+        background: url(images/1.jpg) no-repeat;
+        border: 1px solid red;
+        /* background-size: w h 规定背景图像的尺寸 */
+        /* background-size: 100px 100px  */
+        /* background-size: 100px; 如果只有一个值 后面一个值默认为auto 等比例缩放 */
+        background-size: 100px;
+
+        /* 会选择宽和高中最小的铺满，势必会有一些露在外面 */
+        background-size: cover;
+
+        /* 宽和高哪个先铺满就结束 */
+        /* background-size: contain; */
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

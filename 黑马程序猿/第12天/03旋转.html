@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    div {
+        margin: 100px auto;
+        width: 214px;
+        height: 214px;
+        position: relative;
+    }
+    div p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 214px;
+        width: 100%;
+        height: 100%;
+    }
+    div img {
+        animation: rotate linear 2s infinite;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/web.png" alt="">
+        <p>Web前端</p>
+    </div>
+</body>
+</html>
